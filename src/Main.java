@@ -7,7 +7,9 @@ public class Main {
 
         System.out.println("Digite um valor para A:");
         int a = sc.nextInt();
-        sc.nextLine();
+        sc.nextLine(); 
+        // Você só precisa consumir o '\n' bugado quando você tenta ler uma String depois de um tipo numerico
+        //Neste caso é desnecessário.
         System.out.println("Digite um valor para B:");
         int b = sc.nextInt();
         sc.nextLine();
@@ -24,5 +26,10 @@ public class Main {
 
         System.out.println("O valor de X1 é " + x1);
         System.out.println("O valor de X2 é " + x2);
+
+        //Faltou fechar o Scanner
+        sc.close();
+
+        //Por fim calcule com A sendo 1, B e C sendo 2
     }
 }
